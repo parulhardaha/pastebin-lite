@@ -1,23 +1,23 @@
+<!-- templates/view.html -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>View Paste</title>
+    <title>Pastebin Lite</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
-    <div class="container">
-
+<body class="pink-bg">
+    <div class="card">
         {% if url %}
-            <h2>Paste Created!</h2>
-            <p>Share this link:</p>
-            <a href="{{ url }}">{{ url }}</a>
+            <h1>Paste Created!</h1>
+            <p>Here’s your paste link:</p>
+            <a href="{{ url }}" target="_blank">{{ url }}</a>
+        {% elif content %}
+            <h1>Your Paste</h1>
+            <textarea readonly>{{ content }}</textarea>
+        {% else %}
+            <h1>Oops!</h1>
+            <p>No paste data available.</p>
         {% endif %}
-
-        {% if content %}
-            <h2>Your Paste</h2>
-            <pre>{{ content }}</pre>
-        {% endif %}
-
     </div>
 </body>
 </html>
