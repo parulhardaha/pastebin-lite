@@ -1,0 +1,80 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Light pink background */
+.pink-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe6ef, #ffd6e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center card */
+.card {
+    width: 520px;
+    background: #fff0f6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.25);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.paste-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Textarea */
+textarea {
+    height: 180px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #f8a5c2;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f8a5c2;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+/* Focus effects */
+textarea:focus,
+input:focus {
+    outline: none;
+    border-color: #e91e63;
+}

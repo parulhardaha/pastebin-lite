@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Paste</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+
+        {% if url %}
+            <h2>Paste Created!</h2>
+            <p>Share this link:</p>
+            <a href="{{ url }}">{{ url }}</a>
+        {% endif %}
+
+        {% if content %}
+            <h2>Your Paste</h2>
+            <pre>{{ content }}</pre>
+        {% endif %}
+
+    </div>
+</body>
+</html>
