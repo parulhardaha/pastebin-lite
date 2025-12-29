@@ -15,7 +15,7 @@ body {
 
 /* Center card */
 .card {
-    width: 520px;
+    width: 900px;
     background: #fff0f6;
     padding: 25px;
     border-radius: 12px;
@@ -38,12 +38,13 @@ h1 {
 
 /* Textarea */
 textarea {
-    height: 180px;
+    width: 100%;          
+    min-height: 350px;    
+    font-size: 15px;
+    line-height: 1.6;   
     padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #f8a5c2;
-    resize: none;
-    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
 }
 
 /* Inputs */
